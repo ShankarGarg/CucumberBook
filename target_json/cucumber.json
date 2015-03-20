@@ -1,0 +1,115 @@
+[
+  {
+    "id": "home-page",
+    "tags": [
+      {
+        "name": "@important",
+        "line": 1
+      }
+    ],
+    "description": "",
+    "name": "Home Page",
+    "keyword": "Feature",
+    "line": 2,
+    "elements": [
+      {
+        "id": "home-page;home-page-default-content",
+        "tags": [
+          {
+            "name": "@sanity",
+            "line": 4
+          }
+        ],
+        "description": "",
+        "name": "Home Page Default content",
+        "keyword": "Scenario",
+        "line": 5,
+        "steps": [
+          {
+            "result": {
+              "duration": 213511380,
+              "status": "passed"
+            },
+            "name": "user is on Application home page",
+            "keyword": "Given ",
+            "line": 6,
+            "match": {
+              "location": "LoginSteps.user_is_on_Application_home_page()"
+            }
+          },
+          {
+            "result": {
+              "duration": 3743148,
+              "status": "failed",
+              "error_message": "junit.framework.AssertionFailedError\r\n\tat junit.framework.Assert.fail(Assert.java:55)\r\n\tat junit.framework.Assert.assertTrue(Assert.java:22)\r\n\tat junit.framework.Assert.assertTrue(Assert.java:31)\r\n\tat com.StepDefinitions.LoginSteps.user_gets_a_github_bootcamp_section(LoginSteps.java:158)\r\n\tat ✽.Then user gets a github bootcamp section(sample.feature:7)\r\n"
+            },
+            "name": "user gets a github bootcamp section",
+            "keyword": "Then ",
+            "line": 7,
+            "match": {
+              "location": "LoginSteps.user_gets_a_github_bootcamp_section()"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "id": "home-page;top-banner-content",
+        "tags": [
+          {
+            "name": "@sanity",
+            "line": 15
+          },
+          {
+            "name": "@regression",
+            "line": 15
+          }
+        ],
+        "description": "",
+        "name": "Top Banner content",
+        "keyword": "Scenario",
+        "line": 16,
+        "steps": [
+          {
+            "result": {
+              "duration": 109200,
+              "status": "passed"
+            },
+            "name": "user is on Application home page",
+            "keyword": "Given ",
+            "line": 17,
+            "match": {
+              "location": "LoginSteps.user_is_on_Application_home_page()"
+            }
+          },
+          {
+            "result": {
+              "duration": 42284,
+              "status": "passed"
+            },
+            "name": "user focuses on Top Banner",
+            "keyword": "When ",
+            "line": 18,
+            "match": {
+              "location": "LoginSteps.user_focuses_on_Top_Banner()"
+            }
+          },
+          {
+            "result": {
+              "duration": 37768,
+              "status": "passed"
+            },
+            "name": "user gets an option of home page",
+            "keyword": "Then ",
+            "line": 19,
+            "match": {
+              "location": "LoginSteps.user_gets_an_option_of_home_page()"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "uri": "sample.feature"
+  }
+]

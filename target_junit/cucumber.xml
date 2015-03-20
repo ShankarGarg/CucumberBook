@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="0">
+<testcase classname="Home Page" name="Home Page Default content" time="0">
+<failure message="The scenario has pending or undefined step(s)"><![CDATA[Given user is on Application home page......................................undefined
+Then user gets a github bootcamp section....................................skipped
+]]></failure>
+</testcase>
+<testcase classname="Home Page" name="Top Banner content" time="0">
+<failure message="The scenario has pending or undefined step(s)"><![CDATA[Given user is on Application home page......................................undefined
+When user focuses on Top Banner.............................................skipped
+Then user gets an option of home page.......................................skipped
+]]></failure>
+</testcase>
+</testsuite>

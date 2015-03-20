@@ -1,0 +1,67 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>Cucumber-Book</groupId>
+  <artifactId>Cucumber-Book</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Cucumber-Book</name>
+  <description>Cucumber-Book</description>
+  
+  <properties>
+		<maven.compiler.version>2.3.2</maven.compiler.version>
+		<selenium.version>2.44.0</selenium.version>
+		<junit.version>4.11</junit.version>
+		<cucumber.version>1.2.2</cucumber.version>
+  </properties>
+
+  <dependencies>
+		<!-- cucumber -->
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<version>${cucumber.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-junit</artifactId>
+			<version>${cucumber.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<!--  Appium -->
+		<dependency>
+		  <groupId>io.appium</groupId>
+		  <artifactId>java-client</artifactId>
+		  <version>2.1.0</version>
+		</dependency>
+		<!-- Selenium -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-firefox-driver</artifactId>
+			<version>${selenium.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-ie-driver</artifactId>
+			<version>${selenium.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-chrome-driver</artifactId>
+			<version>${selenium.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-support</artifactId>
+			<version>${selenium.version}</version>     
+		</dependency>
+		<!-- Http client -->
+		<dependency>
+		  <groupId>org.apache.httpcomponents</groupId>
+		  <artifactId>httpclient</artifactId>
+		  <version>4.3.5</version>
+		</dependency>
+	</dependencies>
+</project>
