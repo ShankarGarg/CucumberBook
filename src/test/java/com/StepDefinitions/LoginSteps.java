@@ -5,10 +5,11 @@ import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 
-import junit.framework.Assert;
-
 import cucumber.api.DataTable;
 import cucumber.api.Format;
+import cucumber.api.java.da.Givet;
+import cucumber.api.java.da.Når;
+import cucumber.api.java.da.Så;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -264,5 +265,33 @@ public class LoginSteps {
 	    
 	    
 	}
-	
+	@Givet("^brugeren er på ansøgning side$")
+	public void brugerenErPåAnsøgningSide()  {
+	   
+	    
+	}
+
+	@Når("^brugeren klikker login knap$")
+	public void brugerenKlikkerLoginKnap()  {
+	   
+	    
+	}
+
+	@Så("^Derefter bruger er på hjemmesiden$")
+	public void derefterBrugerErPåHjemmesiden()  {
+	   
+	    
+	}
+
+	@Given("^user is on application page$")
+	public void userIsOnApplicationPage()  {
+	   
+	    
+	}
+
+	@When("^user clicks login button$")
+	public void userClicksLoginButton()  {
+	   
+	    
+	}
 }
