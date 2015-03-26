@@ -9,13 +9,13 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(	
 		features = "src/test/java/com/features",
 		glue = "com.StepDefinitions",
-		tags = { "@sanity" },
+		tags = {"@regression" },
 		dryRun = false,
 		strict = true,
 		monochrome=true,
 		format = { "pretty",
-				"html:target/cucumber-report/sanity"
+				"html:target/cucumber-report/regression"
 				}
 		)
-public class RunCukeTest {
+public class RunCuke2Test {
 }

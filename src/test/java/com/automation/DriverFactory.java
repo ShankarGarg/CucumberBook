@@ -8,6 +8,8 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+/*import java.io.BufferedWriter;
+import java.io.ByteArrayOutputStream;*/
 
 /*
  Driver Class to get driver according to browser
@@ -19,36 +21,26 @@ public class DriverFactory {
 	public static int waitTime = 10;
 
 	public static String browser = "firefox";
-	//public static String baseURL = "http://xebia.in/";
-	public static String baseURL = "http://newtours.demoaut.com/";
+	public static String baseURL = "https://github.com/";
 	public static Platform currentOS = Platform.getCurrent();
 
 	public String testName;
 	public String ClassName = null;
 	public String NewFileNamePath = null;
 
-	protected static void getDriverInstance() {
-		// so that multiple windows are not opened
-		if (driver == null) {
-			createDriver();
-		}
-
-	}
-
-	public static void createDriver() {
+	public static void createDriver() throws InterruptedException {
 
 		System.out.println("Browser= " + browser);
 		System.out.println("Platform= " + currentOS);
 		System.out.println("URL= " + baseURL);
 
-		createDriver(browser);
+		initateDriver();
 		OpenURL(baseURL);
+		Thread.sleep(2000);
 	}
 
-	public static void createDriver(final String browserId) {
-		if (browserId.equalsIgnoreCase("firefox")) {
-			driver = new FirefoxDriver();
-		} 
+	public static void initateDriver() {
+			driver = new FirefoxDriver(); 
 	}
 
 	public static void OpenURL(String baseURL) {

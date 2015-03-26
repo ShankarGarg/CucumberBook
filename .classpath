@@ -32,5 +32,7 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/seleniumhq/selenium/selenium-api/2.42.2/selenium-api-2.42.2.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/seleniumhq/selenium/selenium-server-standalone/2.42.2/selenium-server-standalone-2.42.2.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

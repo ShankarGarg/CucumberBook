@@ -1,5 +1,5 @@
 @important
-Feature: Home Page
+Feature: sample
 
   @sanity
   Scenario: Home Page Default content
@@ -12,7 +12,7 @@ Feature: Home Page
     When user focuses on GitHub Bootcamp Section
     Then user gets an option to setup git
 
-  @sanity @regression
+ # @sanity @regression
   Scenario: Top Banner content
     Given user is on Application home page
     When user focuses on Top Banner

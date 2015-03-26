@@ -1,15 +1,21 @@
-package com.automation;
+package com.StepDefinitions;
 
+import com.automation.DriverFactory;
+
+import cucumber.api.java.After;
 import cucumber.api.java.Before;
 
 public class Hooks {
-
-	/*@Before("@sanity,@regression")
-	public void taggedHookMethod1() {
-	System.out.println("tagged hook - sanity OR regression");
-	}
 	
-	@Before({"@sanity","@regression"})
+	DriverFactory df = new DriverFactory();
+
+	@Before("@sanity,@regression")
+	public void taggedHookMethod1() throws InterruptedException {
+		System.out.println("inside hook");
+		df.createDriver();
+	}
+	/*
+	@Before({"@sanity,@regression"})
 	public void taggedHookMethod2() {
 	System.out.println("tagged hook - Sanity AND Regression");
 	}
@@ -26,11 +32,11 @@ public class Hooks {
 	}
 */
 	
-	/*@After
+	@After
 	public void tearDown() {
 
 		System.out.println("Inside After");
-		//driver.quit();
-	}*/
+		df.tearDown();
+	}
 
 }
