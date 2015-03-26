@@ -1,4 +1,4 @@
-package com.CucumberOptions;
+/*package com.CucumberOptions;
 
 import org.junit.runner.RunWith;
 
@@ -18,4 +18,4 @@ import cucumber.api.junit.Cucumber;
 				}
 		)
 public class RunCuke2Test {
-}
+}*/
