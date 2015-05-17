@@ -1,0 +1,38 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>CucumberRESTAutomation</groupId>
+	<artifactId>CucumberRESTAutomation</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>CucumberRESTAutomation</name>
+	<description>Cucumber+HTTP Client project</description>
+
+	<properties>
+		<http.version>4.4.1</http.version>
+		<cucumber.version>1.2.2</cucumber.version>
+	</properties>
+	
+	<dependencies>
+		<!-- cucumber -->
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<version>${cucumber.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-junit</artifactId>
+			<version>${cucumber.version}</version>
+			<scope>test</scope>
+		</dependency>
+		
+		<!-- HTTPClient -->
+		<dependency>
+		  <groupId>org.apache.httpcomponents</groupId>
+		  <artifactId>httpclient</artifactId>
+		  <version>${http.version}</version>
+		</dependency>
+    </dependencies>
+
+</project>
