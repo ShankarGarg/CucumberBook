@@ -1,10 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>Cucumber-CookBook</groupId>
-  <artifactId>Cucumber-CookBook</artifactId>
+  <groupId>CucumberCookBook</groupId>
+  <artifactId>CucumberCookBook</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>Cucumber-CookBook</name>
-  <description>Cucumber-CookBook</description>
+  <name>CucumberCookBook</name>
+  <description>CucumberCookBook</description>
   
   	<properties>
 		<maven.compiler.version>2.3.2</maven.compiler.version>
